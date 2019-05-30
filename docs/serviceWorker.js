@@ -1,7 +1,7 @@
 var CACHE_NAME  = "PTEST-cache-v1";
 var urlsToCache = [
-    "https://test.mousetronick.com/minimumPwa/",
-    "https://test.mousetronick.com/minimumPwa/index.html"
+    "https://kazukazuprogram.github.io/swtest/",
+    "https://kazukazuprogram.github.io/swtest/index.html"
 ];
 
 self.addEventListener('install', function(event) {

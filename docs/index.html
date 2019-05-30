@@ -10,6 +10,7 @@
       function (registration) {
           if (typeof registration.update == 'function') {
               registration.update();
+              console.log("registration updated.")
           }
       })
       .catch(function (error) {
@@ -20,5 +21,8 @@
   </head>
   <body>
     <p>Hello, PWA world!</p>
+    <p>Version
+      1
+    </p>
   </body>
 </html>

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja" dir="ltr">
   <head>
-    <title>Hello PWA world!</title>
-    <link rel="manifest" href="manifest.json">
-    <script>
-    if ('serviceWorker' in navigator) {
-     navigator.serviceWorker.register('serviceWorker.js')
-      .then(
-      function (registration) {
-          if (typeof registration.update == 'function') {
-              registration.update();
-              console.log("registration updated.")
-          }
-      })
-      .catch(function (error) {
-        console.log("Error Log: " + error);
-      });
-    }
-    </script>
+    <meta charset="utf-8">
+    <title>SW_TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>Hello, PWA world!</p>
-    <p>Version
-      1
-    </p>
+    <div class="image inlineblock">
+      <img src="image.webp" alt="IMAGE" height="50px">
+    </div>
+    <div class="title inlineblock">
+      <h1>Test_Page</h1>
+    </div>
+    <form class="mainForm">
+      <input type="text" name="text" value="" autofocus required>
+      <input type="submit" value="submit">
+    </form>
   </body>
 </html>
